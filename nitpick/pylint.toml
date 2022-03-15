@@ -1,9 +1,9 @@
 [".pylintrc"."MESSAGES CONTROL"]
-"disable" = "bad-indentation, invalid-name, line-too-long, missing-docstring, unspecified-encoding"
+disable = "bad-indentation, invalid-name, line-too-long, missing-docstring, unspecified-encoding"
 
 [".pylintrc".DESIGN]
-"max-args" = 5
-"max-branches" = 10
+max-args = 5
+max-branches = 10
 
 [".pylintrc".STRING]
-"check-quote-consistency" = "yes"
+check-quote-consistency = "yes"

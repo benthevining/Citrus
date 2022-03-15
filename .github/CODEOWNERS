@@ -24,6 +24,10 @@ CMakeLists.txt benthevining
 LICENSE benthevining
 Makefile benthevining
 nitpick-style.toml benthevining
+nitpick/editorconfig.toml benthevining
+nitpick/gitlint.toml benthevining
+nitpick/package-json.toml benthevining
+package.json benthevining
 scripts/alphabetize_codeowners.py benthevining
 scripts/util.make benthevining
 y benthevining

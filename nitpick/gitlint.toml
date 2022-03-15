@@ -1,17 +1,17 @@
 [".gitlint".general]
-"ignore" = "title-trailing-punctuation, body-is-missing"
-"fail-without-commits" = true
-"staged" = true
-"contrib" = "contrib-title-conventional-commits"
+ignore = "title-trailing-punctuation, body-is-missing"
+fail-without-commits = true
+staged = true
+contrib = "contrib-title-conventional-commits"
 
 [".gitlint".title-max-length]
-"line-length" = 200
+line-length = 200
 
 [".gitlint".title-min-length]
-"min-length" = 10
+min-length = 10
 
 [".gitlint".body-max-line-length]
-"line-length" = 250
+line-length = 250
 
 [".gitlint".contrib-title-conventional-commits]
-"types" = "fix, feat, chore, docs, style, refactor, test, ci"
+types = "fix, feat, chore, docs, style, refactor, test, ci"
