@@ -17,6 +17,7 @@ minimum_version = "0.10.0"
 ".github/FUNDING.yml" = ""
 ".github/CODEOWNERS" = ""
 ".github/CODE_OF_CONDUCT.md" = ""
+".github/ISSUE_TEMPLATE/config.yml" = ""
 
 [".editorconfig"."*"]
 "insert_final_newline" = true
