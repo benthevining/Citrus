@@ -7,9 +7,15 @@
 # Order is important. The last matching pattern has the most precedence.
 # These owners will be the default owners for everything in the repo.
 # This file is also being managed automatically by the gitown tool.
+.ecrc benthevining
+.editorconfig benthevining
+.github/CODEOWNERS benthevining
+.gitignore benthevining
+.gitlint benthevining
 .gitownrc benthevining
 .nitpick.toml benthevining
 .pre-commit-config.yaml benthevining
+.style.yapf benthevining
 CMakeLists.txt benthevining
 LICENSE benthevining
 Makefile benthevining
