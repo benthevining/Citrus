@@ -1,0 +1,6 @@
+[submodule "Oranges"]
+	path = Oranges
+	url = https://github.com/benthevining/Oranges.git
+[submodule "Limes"]
+	path = Limes
+	url = https://github.com/benthevining/Limes.git
