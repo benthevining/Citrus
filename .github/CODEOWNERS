@@ -15,6 +15,8 @@
 .gitownrc benthevining
 .nitpick.toml benthevining
 .pre-commit-config.yaml benthevining
+.pylintrc benthevining
+.pylintrc benthevining
 .style.yapf benthevining
 CMakeLists.txt benthevining
 LICENSE benthevining

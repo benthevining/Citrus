@@ -3,13 +3,13 @@ minimum_version = "0.10.0"
 
 [nitpick.files.present]
 ".editorconfig" = ""
+".gitlint" = ""
+".pylintrc" = ""
+".style.yapf" = ""
 ".tool-versions" = ""
 ".pre-commit-config.yaml" = ""
 ".gitownrc" = ""
-".pylintrc" = ""
 ".ecrc" = ""
-".style.yapf" = ""
-".gitlint" = ""
 "CHANGELOG.md" = ""
 "README.md" = ""
 "LICENSE" = ""
@@ -34,3 +34,31 @@ minimum_version = "0.10.0"
 
 [".editorconfig"."*.xml"]
 "indent_style" = "space"
+
+[".gitlint".general]
+"ignore" = "title-trailing-punctuation, body-is-missing"
+"fail-without-commits" = true
+"staged" = true
+"contrib" = "contrib-title-conventional-commits"
+
+[".gitlint".title-max-length]
+"line-length" = 200
+
+[".gitlint".title-min-length]
+"min-length" = 10
+
+[".gitlint".body-max-line-length]
+"line-length" = 250
+
+[".gitlint".contrib-title-conventional-commits]
+"types" = "fix, feat, chore, docs, style, refactor, test, ci"
+
+[".pylintrc"."MESSAGES CONTROL"]
+"disable" = "bad-indentation, invalid-name, line-too-long, missing-docstring, unspecified-encoding"
+
+[".pylintrc".DESIGN]
+"max-args" = 5
+"max-branches" = 10
+
+[".pylintrc".STRING]
+"check-quote-consistency" = "yes"
