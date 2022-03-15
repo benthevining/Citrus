@@ -1,0 +1,18 @@
+
+
+#
+# * <@insert_github_username>
+# Each line is a file pattern followed by one or more owners.
+# Lines starting with '#' are comments.
+# Order is important. The last matching pattern has the most precedence.
+# These owners will be the default owners for everything in the repo.
+# This file is also being managed automatically by the gitown tool.
+.gitownrc benthevining
+.nitpick.toml benthevining
+.pre-commit-config.yaml benthevining
+CMakeLists.txt benthevining
+LICENSE benthevining
+Makefile benthevining
+nitpick-style.toml benthevining
+scripts/alphabetize_codeowners.py benthevining
+y benthevining
