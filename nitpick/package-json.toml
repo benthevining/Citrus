@@ -1,2 +1,5 @@
+[nitpick.files.present]
+"package.json" = ""
+
 ["package.json"]
 contains_keys = [ "release.plugins" ]

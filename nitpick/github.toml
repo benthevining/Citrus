@@ -1,0 +1,5 @@
+[nitpick.files.present]
+".github/FUNDING.yml" = ""
+".github/CODEOWNERS" = ""
+".github/CODE_OF_CONDUCT.md" = ""
+".github/ISSUE_TEMPLATE/config.yml" = ""

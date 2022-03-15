@@ -1,3 +1,6 @@
+[nitpick.files.present]
+".pylintrc" = ""
+
 [".pylintrc"."MESSAGES CONTROL"]
 disable = "bad-indentation, invalid-name, line-too-long, missing-docstring, unspecified-encoding"
 

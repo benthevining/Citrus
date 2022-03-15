@@ -1,0 +1,5 @@
+[nitpick.files.present]
+".clang-tidy" = ""
+
+[".clang-tidy"]
+FormatStyle = "file"

@@ -7,11 +7,13 @@
 # Order is important. The last matching pattern has the most precedence.
 # These owners will be the default owners for everything in the repo.
 # This file is also being managed automatically by the gitown tool.
+.bumpversion.cfg benthevining
 .ecrc benthevining
 .editorconfig benthevining
 .github/CODEOWNERS benthevining
 .github/CODE_OF_CONDUCT.md benthevining
 .github/FUNDING.yml benthevining
+.github/ISSUE_TEMPLATE/bug_report.md benthevining
 .github/ISSUE_TEMPLATE/feature_request.md benthevining
 .gitignore benthevining
 .gitlint benthevining

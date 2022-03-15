@@ -2,29 +2,23 @@
 minimum_version = "0.10.0"
 
 [nitpick.files.present]
-".editorconfig" = ""
 ".bumpversion.cfg" = ""
-".gitlint" = ""
-".pylintrc" = ""
 ".style.yapf" = ""
 ".tool-versions" = ""
 ".pre-commit-config.yaml" = ""
 ".gitownrc" = ""
-".ecrc" = ""
 "CHANGELOG.md" = ""
 "README.md" = ""
 "LICENSE" = ""
-"CMakeLists.txt" = ""
-"package.json" = ""
-".github/FUNDING.yml" = ""
-".github/CODEOWNERS" = ""
-".github/CODE_OF_CONDUCT.md" = ""
-".github/ISSUE_TEMPLATE/config.yml" = ""
 
 [nitpick.styles]
 include = [
 	"nitpick/editorconfig.toml",
 	"nitpick/gitlint.toml",
 	"nitpick/pylint.toml",
-	"nitpick/package-json.toml"
+	"nitpick/package-json.toml",
+	"nitpick/cmake.toml",
+	"nitpick/github.toml",
+	"nitpick/clang_format.toml",
+	"nitpick/clang_tidy.toml"
 ]

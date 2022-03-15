@@ -1,3 +1,7 @@
+[nitpick.files.present]
+".editorconfig" = ""
+".ecrc" = ""
+
 [".editorconfig"]
 root = true
 

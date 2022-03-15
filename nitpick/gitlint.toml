@@ -1,3 +1,6 @@
+[nitpick.files.present]
+".gitlint" = ""
+
 [".gitlint".general]
 ignore = "title-trailing-punctuation, body-is-missing"
 fail-without-commits = true
