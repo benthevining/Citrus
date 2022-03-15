@@ -3,6 +3,7 @@ minimum_version = "0.10.0"
 
 [nitpick.files.present]
 ".editorconfig" = ""
+".bumpversion.cfg" = ""
 ".gitlint" = ""
 ".pylintrc" = ""
 ".style.yapf" = ""
