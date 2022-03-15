@@ -14,6 +14,9 @@ minimum_version = "0.10.0"
 "README.md" = ""
 "LICENSE" = ""
 "CMakeLists.txt" = ""
+".github/FUNDING.yml" = ""
+".github/CODEOWNERS" = ""
+".github/CODE_OF_CONDUCT.md" = ""
 
 [".editorconfig"."*"]
 "insert_final_newline" = true
