@@ -10,7 +10,9 @@
 .ecrc benthevining
 .editorconfig benthevining
 .github/CODEOWNERS benthevining
+.github/CODE_OF_CONDUCT.md benthevining
 .github/FUNDING.yml benthevining
+.github/ISSUE_TEMPLATE/feature_request.md benthevining
 .gitignore benthevining
 .gitlint benthevining
 .gitmodules benthevining
