@@ -14,55 +14,16 @@ minimum_version = "0.10.0"
 "README.md" = ""
 "LICENSE" = ""
 "CMakeLists.txt" = ""
+"package.json" = ""
 ".github/FUNDING.yml" = ""
 ".github/CODEOWNERS" = ""
 ".github/CODE_OF_CONDUCT.md" = ""
 ".github/ISSUE_TEMPLATE/config.yml" = ""
 
-[".editorconfig"."*"]
-"insert_final_newline" = true
-"trim_trailing_whitespace" = true
-"indent_style" = "tab"
-"indent_size" = "tab"
-"tab_width" = 4
-"end_of_line" = "lf"
-"charset" = "utf-8"
-"max_line_length" = "off"
-
-[".editorconfig"."*.md"]
-"trim_trailing_whitespace" = "false"
-
-[".editorconfig"."*.{yml,yaml,json}"]
-"indent_style" = "space"
-"indent_size" = 2
-
-[".editorconfig"."*.xml"]
-"indent_style" = "space"
-
-[".gitlint".general]
-"ignore" = "title-trailing-punctuation, body-is-missing"
-"fail-without-commits" = true
-"staged" = true
-"contrib" = "contrib-title-conventional-commits"
-
-[".gitlint".title-max-length]
-"line-length" = 200
-
-[".gitlint".title-min-length]
-"min-length" = 10
-
-[".gitlint".body-max-line-length]
-"line-length" = 250
-
-[".gitlint".contrib-title-conventional-commits]
-"types" = "fix, feat, chore, docs, style, refactor, test, ci"
-
-[".pylintrc"."MESSAGES CONTROL"]
-"disable" = "bad-indentation, invalid-name, line-too-long, missing-docstring, unspecified-encoding"
-
-[".pylintrc".DESIGN]
-"max-args" = 5
-"max-branches" = 10
-
-[".pylintrc".STRING]
-"check-quote-consistency" = "yes"
+[nitpick.styles]
+include = [
+	"nitpick/editorconfig.toml",
+	"nitpick/gitlint.toml",
+	"nitpick/pylint.toml",
+	"nitpick/package-json.toml"
+]

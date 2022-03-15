@@ -42,7 +42,7 @@ override precommit_init = $(PRECOMMIT) install --install-hooks --overwrite && $(
 
 override run_precommit = $(GIT) add . && $(PRECOMMIT) run --all-files
 
-override run_clean = $(RM) $(BUILDS) $(DOCS) $(DEPS_GRAPH).dot; $(PRECOMMIT) gc
+override run_clean = $(RM) $(BUILDS) $(DOCS) $(DEPS_GRAPH).dot .cache/; $(PRECOMMIT) gc
 
 override run_wipe_cache = $(RM) $(CACHE); $(PRECOMMIT) clean
 

@@ -36,4 +36,9 @@ pc:  ## Runs all pre-commit hooks over all files
 update: ## Update all git submodules
 	@cd $(CITRUS_ROOT) && $(GIT) submodule update
 
+clean: ## Cleans the source tree
+	@cd $(CITRUS_ROOT) && $(call run_clean)
+	@cd $(CITRUS_ROOT)/Oranges && $(MAKE) clean
+	@cd $(CITRUS_ROOT)/Limes && $(MAKE) clean
+
 # update util.make in submodules
