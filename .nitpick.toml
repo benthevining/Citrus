@@ -1,3 +1,7 @@
 [tool.nitpick]
-style = "nitpick/BasicConfig.toml"
+style = [
+	"nitpick/BasicConfig.toml",
+	"styles/cmake.toml"
+]
+
 cache = "forever"
