@@ -12,6 +12,7 @@ include = [
 	"styles/editorconfig.toml",
 	"styles/github.toml",
 	"styles/gitlint.toml",
+	"styles/markdownlint.toml",
 	"styles/package_json.toml",
 	"styles/precommit_config.toml",
 	"styles/pylint.toml",

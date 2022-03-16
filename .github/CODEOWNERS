@@ -32,6 +32,7 @@ nitpick/editorconfig.toml benthevining
 nitpick/github.toml benthevining
 nitpick/gitlint.toml benthevining
 nitpick/package-json.toml benthevining
+nitpick/styles/clang_format.toml benthevining
 nitpick/styles/clang_tidy.toml benthevining
 nitpick/styles/pylint.toml benthevining
 package.json benthevining
