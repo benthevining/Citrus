@@ -1,0 +1,5 @@
+[nitpick.files.present]
+".pre-commit-config.yaml" = ""
+
+[".pre-commit-config.yaml".default_language_version]
+python = "python3"

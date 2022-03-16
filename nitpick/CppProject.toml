@@ -1,0 +1,10 @@
+[nitpick]
+minimum_version = "0.10.0"
+
+[nitpick.styles]
+include = [
+	"BasicConfig.toml",
+	"styles/clang_format.toml",
+	"styles/clang_tidy.toml",
+	"styles/cmake.toml"
+]

@@ -1,5 +1,6 @@
 [nitpick.files.present]
 ".gitlint" = ""
+".gitownrc" = ""
 
 [".gitlint".general]
 ignore = "title-trailing-punctuation, body-is-missing"

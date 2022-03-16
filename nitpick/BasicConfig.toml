@@ -1,0 +1,19 @@
+[nitpick]
+minimum_version = "0.10.0"
+
+[nitpick.files.present]
+"CHANGELOG.md" = ""
+"README.md" = ""
+"LICENSE" = ""
+
+[nitpick.styles]
+include = [
+	"styles/bumpversion.toml",
+	"styles/editorconfig.toml",
+	"styles/github.toml",
+	"styles/gitlint.toml",
+	"styles/package_json.toml",
+	"styles/precommit_config.toml",
+	"styles/pylint.toml",
+	"styles/tool_versions.toml"
+]
