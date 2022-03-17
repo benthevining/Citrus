@@ -34,6 +34,7 @@ nitpick/gitlint.toml benthevining
 nitpick/package-json.toml benthevining
 nitpick/styles/clang_format.toml benthevining
 nitpick/styles/clang_tidy.toml benthevining
+nitpick/styles/markdownlint.toml benthevining
 nitpick/styles/pylint.toml benthevining
 package.json benthevining
 scripts/alphabetize_codeowners.py benthevining
