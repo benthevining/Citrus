@@ -33,6 +33,9 @@ pc:  ## Runs all pre-commit hooks over all files
 	@echo "Checking Limes..."
 	@cd $(CITRUS_ROOT)/Limes && $(MAKE) pc
 
+pc_wipe: ## Wipes all pre-commit environments
+	@cd $(CITRUS_ROOT) && $(PRECOMMIT) clean
+
 update: ## Update all git submodules
 	@cd $(CITRUS_ROOT) && $(GIT) submodule update
 
@@ -40,5 +43,8 @@ clean: ## Cleans the source tree
 	@cd $(CITRUS_ROOT) && $(call run_clean)
 	@cd $(CITRUS_ROOT)/Oranges && $(MAKE) clean
 	@cd $(CITRUS_ROOT)/Limes && $(MAKE) clean
+
+wipe: ## Wipes the cache
+	@cd $(CITRUS_ROOT) && $(call run_wipe_cache)
 
 # update util.make in submodules
