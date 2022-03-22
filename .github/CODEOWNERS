@@ -8,6 +8,7 @@
 # These owners will be the default owners for everything in the repo.
 # This file is also being managed automatically by the gitown tool.
 .bumpversion.cfg benthevining
+.cmake-format.json benthevining
 .ecrc benthevining
 .editorconfig benthevining
 .github/CODEOWNERS benthevining
