@@ -16,11 +16,14 @@ if(PROJECT_IS_TOP_LEVEL)
 endif()
 
 add_subdirectory (Oranges)
+
+list (APPEND CMAKE_MODULE_PATH "${ORANGES_CMAKE_MODULE_PATH}")
+
 add_subdirectory (Limes)
 
 #
 
-include (GNUInstallDirs)
+include (OrangesDefaultProjectSettings)
 
 set (CITRUS_INSTALL_DEST "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
 	 CACHE STRING "Directory below INSTALL_PREFIX where ${PROJECT_NAME} will be installed to")
@@ -36,8 +39,6 @@ configure_package_config_file ("${CMAKE_CURRENT_LIST_DIR}/scripts/CitrusConfig.c
 install (FILES "${CMAKE_CURRENT_BINARY_DIR}/CitrusConfigVersion.cmake"
 			   "${CMAKE_CURRENT_BINARY_DIR}/CitrusConfig.cmake" DESTINATION "${CITRUS_INSTALL_DEST}"
 		 COMPONENT citrus_base)
-
-include (CPackComponent)
 
 cpack_add_component (citrus_base HIDDEN REQUIRED GROUP Citrus)
 
