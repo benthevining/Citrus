@@ -39,6 +39,7 @@ nitpick/styles/clang_tidy.toml benthevining
 nitpick/styles/markdownlint.toml benthevining
 nitpick/styles/pylint.toml benthevining
 package.json benthevining
+scripts/CitrusConfig.cmake benthevining
 scripts/alphabetize_codeowners.py benthevining
 scripts/util.make benthevining
 y benthevining
