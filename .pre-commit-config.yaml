@@ -114,7 +114,7 @@ repos:
       - id: yapf
         args: [-i]
   - repo: https://github.com/PyCQA/pylint
-    rev: v2.14.0-b1
+    rev: v2.14.0
     hooks:
       - id: pylint
 
