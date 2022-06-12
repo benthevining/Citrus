@@ -14,28 +14,15 @@ repos:
     rev: v0.17.0
     hooks:
       - id: gitlint
-  - repo: https://github.com/milin/gitown
-    rev: v0.1.7
-    hooks:
-      - id: gitown
-        args: [--codeowners_filename=.github/CODEOWNERS]
   - repo: https://github.com/mattlqx/pre-commit-sign
     rev: v1.1.3
     hooks:
       - id: sign-commit
 
-  - repo: local
-    hooks:
-      - id: sort-codeowners
-        name: alphabetize codeowners
-        entry: scripts/alphabetize_codeowners.py
-        language: python
-        files: .github/CODEOWNERS
-
-  - repo: https://github.com/andreoliwa/nitpick
-    rev: v0.32.0
-    hooks:
-      - id: nitpick
+  # - repo: https://github.com/andreoliwa/nitpick
+  #   rev: v0.32.0
+  #   hooks:
+  #     - id: nitpick
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.2.0
@@ -54,12 +41,6 @@ repos:
         args: [--fix=lf]
       - id: trailing-whitespace
 
-      # Python
-      - id: check-ast
-      - id: check-builtin-literals
-      - id: debug-statements
-      - id: fix-encoding-pragma
-
   # text and typos
   - repo: https://github.com/sirosen/texthooks
     rev: 0.3.1
@@ -68,7 +49,7 @@ repos:
       - id: fix-smartquotes
       - id: forbid-bidi-controls
   - repo: https://github.com/crate-ci/typos
-    rev: v1.8.1
+    rev: typos-dict-v0.8.1
     hooks:
       - id: typos
         args: [--write-changes]
@@ -87,37 +68,6 @@ repos:
     hooks:
       - id: yamllint
 
-  # Python
-  - repo: https://github.com/asottile/pyupgrade
-    rev: v2.32.1
-    hooks:
-      - id: pyupgrade
-  - repo: https://github.com/myint/autoflake
-    rev: v1.4
-    hooks:
-      - id: autoflake
-  - repo: https://github.com/MarcoGorelli/absolufy-imports
-    rev: v0.3.1
-    hooks:
-      - id: absolufy-imports
-  - repo: https://github.com/PyCQA/isort
-    rev: 5.10.1
-    hooks:
-      - id: isort
-  - repo: https://github.com/asottile/dead
-    rev: v1.5.0
-    hooks:
-      - id: dead
-  - repo: https://github.com/pre-commit/mirrors-yapf
-    rev: v0.32.0
-    hooks:
-      - id: yapf
-        args: [-i]
-  - repo: https://github.com/PyCQA/pylint
-    rev: v2.14.0
-    hooks:
-      - id: pylint
-
   # check editorconfig rules
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
     rev: 2.4.0
@@ -126,6 +76,5 @@ repos:
         always_run: true
 
 ci:
-  skip: [gitown]
   autofix_commit_msg: 'style: pre-commit autofixes [skip ci]'
   autoupdate_commit_msg: 'chore: pre-commit autoupdate [skip ci]'

@@ -1,6 +1,10 @@
 [submodule "Oranges"]
 	path = Oranges
 	url = https://github.com/benthevining/Oranges.git
+	branch = main
+	shallow = true
 [submodule "Limes"]
 	path = Limes
 	url = https://github.com/benthevining/Limes.git
+	branch = main
+	shallow = true
