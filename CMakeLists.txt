@@ -24,11 +24,11 @@ set (CITRUS_INSTALL_DEST "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
 
 mark_as_advanced (FORCE CITRUS_INSTALL_DEST)
 
-write_basic_package_version_file ("CitrusConfigVersion.cmake" VERSION "${PROJECT_VERSION}"
+write_basic_package_version_file (Citrus-config-version.cmake VERSION "${PROJECT_VERSION}"
 								  COMPATIBILITY SameMajorVersion)
 
-configure_package_config_file ("${CMAKE_CURRENT_LIST_DIR}/scripts/CitrusConfig.cmake"
-							   CitrusConfig.cmake INSTALL_DESTINATION "${CITRUS_INSTALL_DEST}")
+configure_package_config_file ("${CMAKE_CURRENT_LIST_DIR}/scripts/Citrus-config.cmake"
+							   Citrus-config.cmake INSTALL_DESTINATION "${CITRUS_INSTALL_DEST}")
 
 install (FILES "${CMAKE_CURRENT_BINARY_DIR}/CitrusConfigVersion.cmake"
 			   "${CMAKE_CURRENT_BINARY_DIR}/CitrusConfig.cmake" DESTINATION "${CITRUS_INSTALL_DEST}"

@@ -1,0 +1,10 @@
+{
+  "anypkg_version": "1.0.0",
+  "project": {
+    "compatibility": "SameMajorVersion",
+    "description": "C++/JUCE development workspace",
+    "git_repo": "https://github.com/benthevining/Citrus.git",
+    "name": "Citrus",
+    "version": "1.0.0"
+  }
+}
