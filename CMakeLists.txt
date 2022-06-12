@@ -11,17 +11,10 @@ project (
 
 enable_testing ()
 
-if(PROJECT_IS_TOP_LEVEL)
-	enable_language (CXX)
-endif()
-
 set (ORANGES_PATH "${CMAKE_CURRENT_LIST_DIR}/Oranges")
 set (LIMES_PATH "${CMAKE_CURRENT_LIST_DIR}/Limes")
 
 add_subdirectory (Oranges)
-
-list (APPEND CMAKE_MODULE_PATH "${ORANGES_CMAKE_MODULE_PATH}")
-
 add_subdirectory (Limes)
 
 #
