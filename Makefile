@@ -68,8 +68,11 @@ pc:  ## Runs all pre-commit hooks over all files
 
 .PHONY: pcr
 pcr: pc ## Runs pre-commit over every repo, recursively
+	@echo "Running pre-commit on Oranges..."
 	@cd $(ORANGES) && make pc
+	@echo "Running pre-commit on Limes..."
 	@cd $(LIMES) && make pc
+	@echo "Running pre-commit on Lemons..."
 	@cd $(LEMONS) && make pc
 
 #

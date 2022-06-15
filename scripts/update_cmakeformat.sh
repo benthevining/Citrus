@@ -1,4 +1,5 @@
 #!/usr/bin/sh
+# This script updates Citrus's .cmake-format.json file with all of Oranges's and Limes's command specifications.
 
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 readonly script_dir
