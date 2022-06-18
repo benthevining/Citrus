@@ -8,8 +8,13 @@ export CITRUS_PATH="${CITRUS_PATH:-$(cd "$(dirname "$0")" && pwd)}"
 
 # Public: This function re-sources the Oranges and Limes .config.sh scripts.
 citrus_reload() {
+	# shellcheck source=Oranges/.config.sh
 	. "$CITRUS_PATH/Oranges/.config.sh"
+
+	# shellcheck source=Limes/.config.sh
 	. "$CITRUS_PATH/Limes/.config.sh"
+
+
 	#. "$CITRUS_PATH/Lemons/.config.sh"
 }
 
