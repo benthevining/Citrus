@@ -86,8 +86,11 @@ clean: ## Cleans the source tree
 	@echo "Cleaning..."
 	$(RM) $(BUILDS)
 	$(PRECOMMIT) gc
+	@echo "Cleaning Oranges..."
 	@cd $(ORANGES) && make clean
+	@echo "Cleaning Limes..."
 	@cd $(LIMES) && make clean
+	@echo "Cleaning Lemons..."
 	@cd $(LEMONS) && make clean
 
 .PHONY: wipe

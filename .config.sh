@@ -14,8 +14,8 @@ citrus_reload() {
 	# shellcheck source=Limes/.config.sh
 	. "$CITRUS_PATH/Limes/.config.sh"
 
-
-	#. "$CITRUS_PATH/Lemons/.config.sh"
+	# shellcheck source=Lemons/.config.sh
+	. "$CITRUS_PATH/Lemons/.config.sh"
 }
 
 citrus_reload

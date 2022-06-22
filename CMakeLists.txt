@@ -13,9 +13,16 @@ enable_testing ()
 
 set (ORANGES_PATH "${CMAKE_CURRENT_LIST_DIR}/Oranges")
 set (LIMES_PATH "${CMAKE_CURRENT_LIST_DIR}/Limes")
+set (LEMONS_PATH "${CMAKE_CURRENT_LIST_DIR}/Lemons")
 
 add_subdirectory (Oranges)
 add_subdirectory (Limes)
+
+if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/PrivateSDKs/CMakeLists.txt")
+	add_subdirectory (PrivateSDKs)
+endif()
+
+add_subdirectory (Lemons)
 
 #
 
@@ -30,9 +37,9 @@ write_basic_package_version_file (Citrus-config-version.cmake VERSION "${PROJECT
 configure_package_config_file ("${CMAKE_CURRENT_LIST_DIR}/scripts/Citrus-config.cmake"
 							   Citrus-config.cmake INSTALL_DESTINATION "${CITRUS_INSTALL_DEST}")
 
-install (FILES "${CMAKE_CURRENT_BINARY_DIR}/CitrusConfigVersion.cmake"
-			   "${CMAKE_CURRENT_BINARY_DIR}/CitrusConfig.cmake" DESTINATION "${CITRUS_INSTALL_DEST}"
-		 COMPONENT citrus_base)
+install (FILES "${CMAKE_CURRENT_BINARY_DIR}/Citrus-config-version.cmake"
+			   "${CMAKE_CURRENT_BINARY_DIR}/Citrus-config.cmake"
+		 DESTINATION "${CITRUS_INSTALL_DEST}" COMPONENT citrus_base)
 
 cpack_add_component (citrus_base HIDDEN REQUIRED GROUP Citrus)
 
