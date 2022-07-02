@@ -10,11 +10,11 @@
 	shallow = true
 [submodule "Lemons"]
 	path = Lemons
-	url = git@github.com:benthevining/Lemons.git
+	url = https://github.com/benthevining/Lemons.git
 	branch = main
 	shallow = true
 [submodule "PrivateSDKs"]
 	path = PrivateSDKs
-	url = git@github.com:benthevining/PrivateSDKs.git
+	url = https://github.com/benthevining/PrivateSDKs.git
 	branch = main
 	shallow = true
